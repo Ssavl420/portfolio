@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*----------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Mono";
   color: #FFFFFF;
@@ -89,25 +93,43 @@ body .container {
   max-width: 1155px;
 }
 
+.title {
+  font-size: 55px;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  font-size: 35px;
+  line-height: 46px;
+  letter-spacing: -0.03em;
+}
+
 .header {
   padding: 27px 0 94px 0;
   width: 100%;
   height: 100vh;
-  background: url("../../Img/background/01.png") center/cover no-repeat;
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/background/001.JPG") center top/cover no-repeat fixed;
 }
 .header .header__inner {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
-.header .header__inner .wrap {
+.header .header__inner .menu__wrap {
+  flex: 1 1 100%;
+  position: sticky;
+  top: 27px;
   margin: 0 auto 252px auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  width: 100%;
   max-width: 1153px;
+  height: 55px;
   justify-content: space-between;
 }
-.header .header__inner .wrap .header__logo {
+.header .header__inner .menu__wrap .header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +138,7 @@ body .container {
   background: #000000;
   border-radius: 100px;
 }
-.header .header__inner .wrap .header__logo p {
+.header .header__inner .menu__wrap .header__logo p {
   margin: 0 7px 2px 0;
   font-size: 42px;
   font-weight: 700;
@@ -126,21 +148,21 @@ body .container {
   color: #3b9ac6;
   text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 1em rgba(255, 255, 255, 0.7);
 }
-.header .header__inner .wrap .header__menu {
+.header .header__inner .menu__wrap .header__menu {
   display: flex;
   flex-wrap: wrap;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 33px;
   letter-spacing: -0.03em;
 }
-.header .header__inner .wrap .header__menu a {
+.header .header__inner .menu__wrap .header__menu a {
   margin: 0 50px 0 0;
   color: #FFFFFF;
 }
-.header .header__inner .wrap .header__menu a:last-child {
+.header .header__inner .menu__wrap .header__menu a:last-child {
   margin: 0;
 }
-.header .header__inner .wrap .header__menu a:hover {
+.header .header__inner .menu__wrap .header__menu a:hover {
   color: #3b9ac6;
 }
 .header .header__inner .header__text {
@@ -155,5 +177,60 @@ body .container {
   font-size: 80px;
   line-height: 70px;
   letter-spacing: -0.03em;
+  color: #3b9ac6;
+}
+
+.portfolio {
+  padding: 150px 0 0 0;
+  background: #000000;
+}
+.portfolio .portfolio__title {
+  margin: 0 0 40px 0;
+}
+.portfolio .portfolio__title p {
+  color: #FFFFFF;
+}
+.portfolio .porfolio__item {
+  padding: 410px 0 0 50px;
+  max-width: 1150px;
+  height: 550px;
+  border-radius: 30px;
+}
+.portfolio .porfolio__item.metrika {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/metrika.png");
+}
+.portfolio .porfolio__item.shop {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/shop.png");
+}
+.portfolio .porfolio__item.nothingear {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/nothing ear.png");
+}
+.portfolio .porfolio__item .item__subtitle {
+  color: #FFFFFF;
+}
+.portfolio .porfolio__item .item__description {
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: -0.03em;
+}
+.portfolio .portfolio__btn {
+  display: flex;
+  margin: 80px 0 150px 0;
+  width: 582px;
+  height: 153px;
+  justify-content: center;
+  align-items: center;
+  background: #3b9ac6;
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.portfolio .portfolio__btn:hover {
+  background: transparent;
+  border: 2px solid #3b9ac6;
   color: #3b9ac6;
 }/*# sourceMappingURL=index.css.map */

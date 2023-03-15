@@ -94,6 +94,7 @@ body {
          }
          .header__menu {
             display: flex;
+            height: 33px;
             flex-wrap: wrap;
             font-size: 18px;
             line-height: 33px;
@@ -161,7 +162,7 @@ body {
    .portfolio__btn {
       display: flex;
       margin: 80px 0 150px 0;
-      width: 582px;
+      max-width: 582px;
       height: 153px;
       justify-content: center;
       align-items: center;

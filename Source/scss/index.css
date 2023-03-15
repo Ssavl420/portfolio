@@ -294,6 +294,12 @@ body .container {
   letter-spacing: -0.03em;
 }
 
+.services {
+  margin: 0 auto 150px auto;
+}
+.services div:last-child {
+  margin: 0 auto;
+}
 .services .services__title {
   margin: 0 0 74px 0;
   max-width: 403px;
@@ -324,4 +330,40 @@ body .container {
   font-size: 22px;
   line-height: 29px;
   letter-spacing: -0.03em;
+}
+
+.contacts {
+  padding: 320px 0 0 0;
+  max-width: 100%;
+  height: 717px;
+  background: url("../../Img/background/contacts.svg") center right/auto auto no-repeat, #191C19;
+  border-radius: 0 30px 30px 0;
+}
+.contacts .contacts__info .info__text {
+  max-width: 201px;
+  font-size: 35px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+}
+.contacts .contacts__info .info__socials {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+.contacts .contacts__info .info__socials:hover {
+  color: #3b9ac6;
+}
+.contacts .contacts__info a:nth-child(3) {
+  max-width: 276px;
+}
+.contacts .contacts__info a:nth-child(4) {
+  max-width: 139px;
+}
+.contacts .contacts__info a:last-child {
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */

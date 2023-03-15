@@ -267,6 +267,9 @@ body .container {
   border-radius: 10px;
   background: url("../../Img/icons/03framework.svg") 50% 50%/auto auto no-repeat, #3b9ac6;
 }
+.competencies div:nth-child(5) {
+  margin: 0 0 150px 0;
+}
 .competencies div:nth-child(5)::before {
   margin: 0 0 16px 0;
   display: block;
@@ -286,6 +289,38 @@ body .container {
 }
 .competencies .competencies__box .box__description {
   max-width: 778px;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+}
+
+.services .services__title {
+  margin: 0 0 74px 0;
+  max-width: 403px;
+}
+.services .services__box {
+  margin: 0 0 74px 0;
+}
+.services .services__box .box__image {
+  max-width: 1150px;
+}
+.services .services__box .box__image img {
+  width: 100%;
+}
+.services .services__box .box__body {
+  padding: 40px;
+  max-width: 1150px;
+  height: 283px;
+  background: #191C19;
+  border-radius: 30px;
+}
+.services .services__box .box__title {
+  margin: 0 0 15px 0;
+  max-width: 1048px;
+  color: #3b9ac6;
+}
+.services .services__box .box__description {
+  max-width: 749px;
   font-size: 22px;
   line-height: 29px;
   letter-spacing: -0.03em;

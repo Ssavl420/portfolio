@@ -216,7 +216,9 @@ body {
       border-radius: 10px;
       background: url('../../Img/icons/03framework.svg') 50% 50% / auto auto no-repeat, $color_2, ;
    }
-   div:nth-child(5)::before {
+   div:nth-child(5) {
+      margin: 0 0 150px 0;
+      &::before {
       margin: 0 0 16px 0;
       display: block;
       content: '';
@@ -224,6 +226,7 @@ body {
       height: 44px;
       border-radius: 10px;
       background: url('../../Img/icons/04mobile.svg') 50% 50% / auto auto no-repeat, $color_2, ;
+      }
    }
    .competencies__box {
       margin: 0 0 60px 0;
@@ -241,6 +244,42 @@ body {
       }
    }
 }
+.services {
+
+   .services__title {
+      margin: 0 0 74px 0;
+      max-width: 403px;
+   }
+   .services__box {
+      margin: 0 0 74px 0;
+      .box__image {
+         max-width: 1150px;
+         img {
+            width: 100%;
+         }
+      }
+      .box__body {
+         padding: 40px;
+         max-width: 1150px;
+         height: 283px;
+         background: #191C19;
+         border-radius: 30px;
+      }
+      .box__title {
+         margin: 0 0 15px 0;
+         max-width: 1048px;
+         color: $color_2;
+      }
+      .box__description {
+         max-width: 749px;
+         font-size: 22px;
+         line-height: 29px;
+         letter-spacing: -0.03em;
+      }
+   }
+}
+
+
 
 
 

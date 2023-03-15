@@ -25,6 +25,7 @@ html {
 }
 body {
    font-family: 'IBM Plex Mono';
+   background: #000000;
    color: #FFFFFF;
    .wrapper {
       margin: 0 auto;
@@ -132,10 +133,9 @@ body {
 .portfolio {
    margin: 0 auto;
    padding: 150px 0 0 0;
-   background: #000000;
    .portfolio__title {
       margin: 0 0 40px 0;
-      p {color: #FFFFFF;}
+      color: #FFFFFF;
    }
    .porfolio__item {
       padding: 410px 0 0 50px;
@@ -182,6 +182,67 @@ body {
       }
    }
 }
+.competencies {
+   
+   .competencies__title {
+      margin: 0 0 48px 0;
+      max-width: 1048px;
+      height: 72px;
+   }
+   div:nth-child(2)::before {
+      margin: 0 0 16px 0;
+      display: block;
+      content: '';
+      width: 45px;
+      height: 44px;
+      border-radius: 10px;
+      background: url('../../Img/icons/01html.svg') 50% 50% / auto auto no-repeat, $color_2, ;
+   }
+   div:nth-child(3)::before {
+      margin: 0 0 16px 0;
+      display: block;
+      content: '';
+      width: 45px;
+      height: 44px;
+      border-radius: 10px;
+      background: url('../../Img/icons/02js.svg') 50% 50% / auto auto no-repeat, $color_2, ;
+   }
+   div:nth-child(4)::before {
+      margin: 0 0 16px 0;
+      display: block;
+      content: '';
+      width: 45px;
+      height: 44px;
+      border-radius: 10px;
+      background: url('../../Img/icons/03framework.svg') 50% 50% / auto auto no-repeat, $color_2, ;
+   }
+   div:nth-child(5)::before {
+      margin: 0 0 16px 0;
+      display: block;
+      content: '';
+      width: 45px;
+      height: 44px;
+      border-radius: 10px;
+      background: url('../../Img/icons/04mobile.svg') 50% 50% / auto auto no-repeat, $color_2, ;
+   }
+   .competencies__box {
+      margin: 0 0 60px 0;
+      
+      .box__subtitle {
+         margin: 0 0 15px 0;
+         max-width: 1048px;
+         color: $color_2;
+      }
+      .box__description {
+         max-width: 778px;
+         font-size: 22px;
+         line-height: 29px;
+         letter-spacing: -0.03em;
+      }
+   }
+}
+
+
 
 
 

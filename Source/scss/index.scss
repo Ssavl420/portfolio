@@ -50,8 +50,7 @@ body {
 .header {
    padding: 27px 0 94px 0;
    width: 100%;
-   height: 100vh;
-   background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(0,0,0,.9) 100%), url('../../Img/background/001.JPG') center top / auto auto no-repeat fixed;
+   background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(0,0,0,.9) 100%), url('../../Img/background/001.JPG') center top / cover no-repeat fixed;
    .header__inner {
       display: flex;
       flex-direction: column;
@@ -143,13 +142,13 @@ body {
       height: 550px;
       border-radius: 30px;
       &.metrika {
-         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/metrika.png');
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/metrika.png') center center / cover no-repeat;
       }
       &.shop {
-         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/shop.png');
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/shop.png') center center / cover no-repeat;
       }
       &.nothingear {
-         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/nothing\ ear.png');
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/nothing\ ear.png') center center / cover no-repeat;
       }
       .item__subtitle {
          color: #FFFFFF;

@@ -148,6 +148,9 @@ body {
       }
       .item__subtitle {
          color: #FFFFFF;
+         &:hover {
+            color: $color_2;
+         }
       }
       .item__description {
          font-size: 30px;

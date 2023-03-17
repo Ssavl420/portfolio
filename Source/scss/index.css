@@ -203,6 +203,9 @@ body .container {
 .portfolio .porfolio__item .item__subtitle {
   color: #FFFFFF;
 }
+.portfolio .porfolio__item .item__subtitle:hover {
+  color: #3b9ac6;
+}
 .portfolio .porfolio__item .item__description {
   font-size: 30px;
   line-height: 39px;

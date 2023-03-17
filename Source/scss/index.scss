@@ -148,6 +148,7 @@ body {
       }
       .item__subtitle {
          color: #FFFFFF;
+         transition: .5s;
          &:hover {
             color: $color_2;
          }

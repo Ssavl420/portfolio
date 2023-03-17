@@ -202,6 +202,7 @@ body .container {
 }
 .portfolio .porfolio__item .item__subtitle {
   color: #FFFFFF;
+  transition: 0.5s;
 }
 .portfolio .porfolio__item .item__subtitle:hover {
   color: #3b9ac6;

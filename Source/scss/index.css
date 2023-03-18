@@ -354,6 +354,7 @@ body .container {
   line-height: 60px;
   letter-spacing: -0.03em;
   color: #FFFFFF;
+  transition: 0.5s;
 }
 .contacts .contacts__info .info__socials:hover {
   color: #3b9ac6;

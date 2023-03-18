@@ -303,6 +303,7 @@ body {
          line-height: 60px;
          letter-spacing: -0.03em;
          color: #FFFFFF;
+         transition: .5s;
          &:hover {
             color: $color_2;
          }

@@ -58,11 +58,11 @@ body {
    .header__bg {
       position: absolute;
       width: 100%;
-      height: 85vh;
+      height: 100vh;
       background: radial-gradient(circle, rgba(2, 0, 36, 0.1) 0%, rgba(0, 0, 0, 1) 100%), url('../../Img/background/001.JPG') no-repeat center top / cover;
    }
    .header__inner {
-      padding: 27px 0 0 0;
+      padding: 27px 20px 0;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -87,8 +87,11 @@ body {
             justify-content: center;
             width: 230px;
             height: 39px;
-            background: #000000;
+            // background: #000000;
             border-radius: 100px;
+            @media (max-width: 767px) {
+               justify-content: flex-start;
+            }
             p{
                margin: 0 7px 2px 0;
                font-size: 42px;
@@ -97,7 +100,10 @@ body {
                letter-spacing: -0.11em;
                text-transform: uppercase;
                color: $color_2;
-               text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 1em rgba(255, 255, 255, .7);
+               text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 1em rgba(104, 104, 104, 0.7);
+               @media (max-width: 767px) {
+                  font-size: 25px;
+               }
             }
          }
          .header__menu {
@@ -110,6 +116,9 @@ body {
             a{
                margin: 0 50px 0 0;
                color: #FFFFFF;
+               @media (max-width: 768px) {
+                  width: 100%;
+               }
                &:last-child {
                   margin: 0;
                }
@@ -126,6 +135,10 @@ body {
          font-size: 20px;
          line-height: 26px;
          letter-spacing: -0.03em;
+         @media (max-width: 1199px) {
+            font-size: 20px;
+            line-height: 26px;
+         }
       }
       .header__maintext {
          max-width: 919px;
@@ -134,11 +147,19 @@ body {
          line-height: 70px;
          letter-spacing: -0.03em;
          color: $color_2;
+         @media (max-width: 1199px) {
+            font-size: 60px;
+            line-height: 50px;
+         }
+         @media (max-width: 767px) {
+            font-size: 28px;
+            line-height: 30px;
+         }
       }
    }
 }
 .portfolio {
-   margin: 85vh auto 0;
+   margin: 100vh auto 0;
    padding: 150px 0 0 0;
    .portfolio__title {
       margin: 0 0 40px 0;

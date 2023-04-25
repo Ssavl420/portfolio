@@ -112,11 +112,6 @@ body .container {
   max-height: 100vh;
   display: block;
   background: url("../../Img/background/001.JPG") no-repeat center top/cover;
-  background-attachment: fixed;
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
 }
 .header .header__inner {
   display: flex;

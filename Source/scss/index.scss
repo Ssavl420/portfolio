@@ -55,11 +55,11 @@ body {
    display: block;
    // background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(0,0,0,.9) 100%), url('../../Img/background/001.JPG');
    background: url('../../Img/background/001.JPG') no-repeat center top / cover;
-   background-attachment: fixed;
-   background-size: cover;
-   -o-background-size: cover;
-   -moz-background-size: cover;
-   -webkit-background-size: cover;
+   // background-attachment: fixed;
+   // background-size: cover;
+   // -o-background-size: cover;
+   // -moz-background-size: cover;
+   // -webkit-background-size: cover;
    .header__inner {
       display: flex;
       flex-direction: column;

@@ -110,7 +110,8 @@ body .container {
   padding: 27px 0 94px 0;
   max-width: 100%;
   max-height: 100vh;
-  background: url("../../Img/background/001.JPG") no-repeat center center/cover;
+  display: block;
+  background: url("../../Img/background/001.JPG") no-repeat center top/cover;
   background-attachment: fixed;
   background-size: cover;
   -o-background-size: cover;

@@ -49,17 +49,16 @@ body {
 }
 .header {
    padding: 27px 0 94px 0;
-   max-width: 100%;
-   // min-width: 100%;
-   max-height: 100vh;
-   display: block;
-   // background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(0,0,0,.9) 100%), url('../../Img/background/001.JPG');
-   background: url('../../Img/background/001.JPG') no-repeat center top / cover;
-   // background-attachment: fixed;
-   // background-size: cover;
-   // -o-background-size: cover;
-   // -moz-background-size: cover;
-   // -webkit-background-size: cover;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   .header__bg {
+      max-width: 100%;
+      max-height: 100vh;
+      background: url('../../Img/background/001.JPG') no-repeat center top / cover;
+   }
    .header__inner {
       display: flex;
       flex-direction: column;

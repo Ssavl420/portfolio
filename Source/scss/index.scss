@@ -26,7 +26,7 @@ html {
 }
 body {
    font-family: 'Exo 2';
-   font-weight: lighter;
+   font-weight: 200;
    background: #000000;
    color: #FFFFFF;
    .wrapper {
@@ -47,11 +47,29 @@ body {
    font-size: 55px;
    line-height: 72px;
    letter-spacing: -0.03em;
+   @media (max-width: 1199px) {
+      font-size: 45px;
+      line-height: 50px;
+   }
+   @media (max-width: 767px) {
+      font-size: 30px;
+      line-height: 30px;
+   }
 }
 .subtitle {
    font-size: 35px;
    line-height: 46px;
    letter-spacing: -0.03em;
+   @media (max-width: 1199px) {
+   }
+   @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 30px;
+   }
+   @media (max-width: 450px) {
+      font-size: 20px;
+      line-height: 25px;
+   }
 }
 .header {
    padding: 2vh 0 0 0;
@@ -136,7 +154,7 @@ body {
          position: absolute;
          width: 40px;
          height: 3px;
-         background-color: #3b9ac6;
+         background-color: $color_2;
       }
       &::before {
          top: 0;
@@ -147,7 +165,7 @@ body {
       span {
          width: 50%;
          height: 3px;
-         background-color: #3b9ac6;
+         background-color: $color_2;
       }
       @media (max-width: 802px) {
          display: flex;
@@ -196,7 +214,6 @@ body {
             align-items: center;
             gap: 10px;
             font-size: 24px;
-            font-weight: 400;
             line-height: 30px;
             & a {
                color: #FFFFFF;
@@ -209,10 +226,9 @@ body {
             align-items: center;
             gap: 10px;
             font-size: 24px;
-            font-weight: 400;
             line-height: 30px;
             & p {
-               color: #3b9ac6;
+               color: $color_2;
             }
             & a {
                color: #FFFFFF;
@@ -262,7 +278,7 @@ body {
       .about__maintext {
          max-width: 65vw;
          font-size: 80px;
-         font-weight: lighter;
+         font-weight: 200;
          line-height: 70px;
          letter-spacing: -0.03em;
          color: $color_2;
@@ -283,35 +299,82 @@ body {
 .portfolio {
    margin: 100vh auto 0;
    padding: 150px 0 0 0;
+   @media (max-width: 1199px) {
+      padding: 75px 0 0 0;
+   }
    .portfolio__title {
       margin: 0 0 40px 0;
       color: #FFFFFF;
+      @media (max-width: 767px) {
+         margin: 0 0 30px 0;
+      }
    }
    .porfolio__item {
       padding: 410px 0 0 50px;
       max-width: 1150px;
       height: 550px;
       border-radius: 30px;
+      display: block;
+      transition: .5s;
+      &:hover {
+         box-shadow: inset 0 0 5px 5px $color_2, 0 0 5px 5px $color_2;
+      }
+      @media (max-width: 1199px) {
+      }
+      @media (max-width: 767px) {
+         padding: 265px 0 0 27px;
+         height: 350px;
+      }
+      @media (max-width: 450px) {
+         padding: 138px 0 0 14px;
+         height: 200px;
+      }
+      &.hydra {
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/hydra.png') center left no-repeat;
+         background-size: cover;
+         @media (max-width: 1199px) {
+            // background-size: contain;
+         }
+      }
       &.metrika {
-         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/metrika.png') center center / cover no-repeat;
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/metrika.png') center left no-repeat;
+         background-size: cover;
+         @media (max-width: 1199px) {
+            // background-size: contain;
+         }
       }
       &.shop {
-         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/shop.png') center center / cover no-repeat;
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/shop.png') center left no-repeat;
+         background-size: cover;
+         @media (max-width: 1199px) {
+            // background-size: contain;
+         }
       }
       &.nothingear {
-         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/nothing\ ear.png') center center / cover no-repeat;
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../Img/content/nothing\ ear.png') center left no-repeat;
+         background-size: cover;
+         @media (max-width: 1199px) {
+            // background-size: contain;
+         }
       }
       .item__subtitle {
          color: #FFFFFF;
-         transition: .5s;
-         &:hover {
-            color: $color_2;
-         }
       }
       .item__description {
          font-size: 30px;
          line-height: 39px;
          letter-spacing: -0.03em;
+         color: #FFFFFF;
+         @media (max-width: 1199px) {
+         }
+         @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 25px;
+         }
+         @media (max-width: 450px) {
+            font-size: 16px;
+            line-height: 18px;
+         }
       }
    }
    .portfolio__btn {
@@ -329,6 +392,11 @@ body {
       letter-spacing: -0.03em;
       color: #000000;
       transition: background .5s ease, color .5s ease;
+      @media (max-width: 767px) {
+         margin: 30px 0 0 0;
+         min-width: 100%;
+         height: 60px;
+      }
       &:hover {
          background: transparent;
          border: 2px solid $color_2;
@@ -347,6 +415,9 @@ body {
       max-width: 1048px;
       min-height: 72px;
       flex: 0 1 100%;
+      @media (max-width: 767px) {
+         padding: 85px 0 0 0;
+      }
    }
    div:nth-child(2)::before {
       margin: 0 0 16px 0;
@@ -377,6 +448,9 @@ body {
    }
    div:nth-child(5) {
       margin: 0 0 150px 0;
+      @media (max-width: 767px) {
+         margin: 0 0 60px 0;
+      }
       &::before {
       margin: 0 0 16px 0;
       display: block;
@@ -395,6 +469,10 @@ body {
          margin: 0 0 15px 0;
          max-width: 1048px;
          color: $color_2;
+         @media (max-width: 767px) {
+            margin: 0 0 15px 2vw;
+            max-width: 74vw;
+         }
       }
       .box__description {
          max-width: 778px;
@@ -403,21 +481,33 @@ body {
          letter-spacing: -0.03em;
       }
       @media (max-width: 767px) {
+         margin: 0 0 20px 0;
+         display: flex;
          flex: 0 1 100%;
+         flex-wrap: wrap;
+         align-items: center;
       }
    }
 }
 .services {
    margin: 0 auto 150px auto;
+   @media (max-width: 767px) {
+      padding: 60px 0 0 0;
+   }
    div:last-child {
       margin: 0 auto;
    }
    .services__title {
       margin: 0 0 74px 0;
-      max-width: 403px;
+      @media (max-width: 767px) {
+         margin: 0 0 48px 0;
+      }
    }
    .services__box {
       margin: 0 0 74px 0;
+      @media (max-width: 767px) {
+         margin: 0 0 10px 0;
+      }
       .box__image {
          max-width: 1150px;
          img {
@@ -430,6 +520,10 @@ body {
          min-height: 283px;
          background: #191C19;
          border-radius: 30px;
+         @media (max-width: 767px) {
+            padding: 20px;
+            min-height: auto;
+         }
       }
       .box__title {
          margin: 0 0 15px 0;

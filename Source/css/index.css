@@ -81,7 +81,7 @@ html {
 
 body {
   font-family: "Exo 2";
-  font-weight: lighter;
+  font-weight: 200;
   background: #000000;
   color: #FFFFFF;
 }
@@ -104,11 +104,35 @@ body.body-lock {
   line-height: 72px;
   letter-spacing: -0.03em;
 }
+@media (max-width: 1199px) {
+  .title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
 
 .subtitle {
   font-size: 35px;
   line-height: 46px;
   letter-spacing: -0.03em;
+}
+@media (max-width: 767px) {
+  .subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .subtitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .header {
@@ -265,7 +289,6 @@ body.body-lock {
   align-items: center;
   gap: 10px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 30px;
 }
 .header .burger .burger__body .burger__menu a {
@@ -278,7 +301,6 @@ body.body-lock {
   align-items: center;
   gap: 10px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 30px;
 }
 .header .burger .burger__body .burger__footer p {
@@ -329,7 +351,7 @@ body.body-lock {
 .about .about__inner .about__maintext {
   max-width: 65vw;
   font-size: 80px;
-  font-weight: lighter;
+  font-weight: 200;
   line-height: 70px;
   letter-spacing: -0.03em;
   color: #3b9ac6;
@@ -354,36 +376,79 @@ body.body-lock {
   margin: 100vh auto 0;
   padding: 150px 0 0 0;
 }
+@media (max-width: 1199px) {
+  .portfolio {
+    padding: 75px 0 0 0;
+  }
+}
 .portfolio .portfolio__title {
   margin: 0 0 40px 0;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .portfolio .portfolio__title {
+    margin: 0 0 30px 0;
+  }
 }
 .portfolio .porfolio__item {
   padding: 410px 0 0 50px;
   max-width: 1150px;
   height: 550px;
   border-radius: 30px;
+  display: block;
+  transition: 0.5s;
+}
+.portfolio .porfolio__item:hover {
+  box-shadow: inset 0 0 5px 5px #3b9ac6, 0 0 5px 5px #3b9ac6;
+}
+@media (max-width: 767px) {
+  .portfolio .porfolio__item {
+    padding: 265px 0 0 27px;
+    height: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .portfolio .porfolio__item {
+    padding: 138px 0 0 14px;
+    height: 200px;
+  }
+}
+.portfolio .porfolio__item.hydra {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/hydra.png") center left no-repeat;
+  background-size: cover;
 }
 .portfolio .porfolio__item.metrika {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/metrika.png") center center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/metrika.png") center left no-repeat;
+  background-size: cover;
 }
 .portfolio .porfolio__item.shop {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/shop.png") center center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/shop.png") center left no-repeat;
+  background-size: cover;
 }
 .portfolio .porfolio__item.nothingear {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/nothing ear.png") center center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../Img/content/nothing ear.png") center left no-repeat;
+  background-size: cover;
 }
 .portfolio .porfolio__item .item__subtitle {
   color: #FFFFFF;
-  transition: 0.5s;
-}
-.portfolio .porfolio__item .item__subtitle:hover {
-  color: #3b9ac6;
 }
 .portfolio .porfolio__item .item__description {
   font-size: 30px;
   line-height: 39px;
   letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .portfolio .porfolio__item .item__description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .portfolio .porfolio__item .item__description {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 .portfolio .portfolio__btn {
   display: flex;
@@ -401,6 +466,13 @@ body.body-lock {
   color: #000000;
   transition: background 0.5s ease, color 0.5s ease;
 }
+@media (max-width: 767px) {
+  .portfolio .portfolio__btn {
+    margin: 30px 0 0 0;
+    min-width: 100%;
+    height: 60px;
+  }
+}
 .portfolio .portfolio__btn:hover {
   background: transparent;
   border: 2px solid #3b9ac6;
@@ -417,6 +489,11 @@ body.body-lock {
   max-width: 1048px;
   min-height: 72px;
   flex: 0 1 100%;
+}
+@media (max-width: 767px) {
+  .competencies .competencies__title {
+    padding: 85px 0 0 0;
+  }
 }
 .competencies div:nth-child(2)::before {
   margin: 0 0 16px 0;
@@ -448,6 +525,11 @@ body.body-lock {
 .competencies div:nth-child(5) {
   margin: 0 0 150px 0;
 }
+@media (max-width: 767px) {
+  .competencies div:nth-child(5) {
+    margin: 0 0 60px 0;
+  }
+}
 .competencies div:nth-child(5)::before {
   margin: 0 0 16px 0;
   display: block;
@@ -466,6 +548,12 @@ body.body-lock {
   max-width: 1048px;
   color: #3b9ac6;
 }
+@media (max-width: 767px) {
+  .competencies .competencies__box .box__subtitle {
+    margin: 0 0 15px 2vw;
+    max-width: 74vw;
+  }
+}
 .competencies .competencies__box .box__description {
   max-width: 778px;
   font-size: 22px;
@@ -474,22 +562,40 @@ body.body-lock {
 }
 @media (max-width: 767px) {
   .competencies .competencies__box {
+    margin: 0 0 20px 0;
+    display: flex;
     flex: 0 1 100%;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .services {
   margin: 0 auto 150px auto;
 }
+@media (max-width: 767px) {
+  .services {
+    padding: 60px 0 0 0;
+  }
+}
 .services div:last-child {
   margin: 0 auto;
 }
 .services .services__title {
   margin: 0 0 74px 0;
-  max-width: 403px;
+}
+@media (max-width: 767px) {
+  .services .services__title {
+    margin: 0 0 48px 0;
+  }
 }
 .services .services__box {
   margin: 0 0 74px 0;
+}
+@media (max-width: 767px) {
+  .services .services__box {
+    margin: 0 0 10px 0;
+  }
 }
 .services .services__box .box__image {
   max-width: 1150px;
@@ -503,6 +609,12 @@ body.body-lock {
   min-height: 283px;
   background: #191C19;
   border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .services .services__box .box__body {
+    padding: 20px;
+    min-height: auto;
+  }
 }
 .services .services__box .box__title {
   margin: 0 0 15px 0;

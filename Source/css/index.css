@@ -634,37 +634,54 @@ body.body-lock {
   padding: 320px 0 0 0;
   max-width: 100%;
   min-height: 717px;
-  background: url("../../Img/background/contacts.svg") center right/auto auto no-repeat, #191C19;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.85) 50%, rgba(0, 0, 0, 0.7) 100%), url("../../Img/background/contacts.svg") center right/contain no-repeat, #191C19;
   border-radius: 30px;
 }
+@media (max-width: 767px) {
+  .contacts {
+    padding: 50px 0;
+    min-height: auto;
+  }
+}
 .contacts .contacts__info .info__text {
+  margin: 0 0 40px 0;
   max-width: 201px;
   font-size: 35px;
   line-height: 60px;
   letter-spacing: -0.03em;
 }
-.contacts .contacts__info .info__socials {
-  margin: 0 0 20px 0;
+@media (max-width: 767px) {
+  .contacts .contacts__info .info__text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.contacts .contacts__info .form {
   display: flex;
   flex-direction: column;
-  max-width: 310px;
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: -0.03em;
+  gap: 15px;
+}
+.contacts .contacts__info .form .input {
+  padding: 0 0 0 20px;
+  height: 38px;
+  background: #3B3D3B;
   color: #FFFFFF;
-  transition: 0.5s;
+  border-radius: 19px;
 }
-.contacts .contacts__info .info__socials:hover {
+.contacts .contacts__info .form .input:focus {
+  box-shadow: 0 0 5px 0px #3b9ac6;
+}
+.contacts .contacts__info .form .input__btn {
+  width: 40%;
+  height: 38px;
+  border-radius: 19px;
+  background: #3b9ac6;
+  border: 2px solid #3b9ac6;
+  transition: all 0.5s ease;
+}
+.contacts .contacts__info .form .input__btn:hover {
+  background: #FFFFFF;
   color: #3b9ac6;
-}
-.contacts .contacts__info a:nth-child(3) {
-  max-width: 276px;
-}
-.contacts .contacts__info a:nth-child(4) {
-  max-width: 139px;
-}
-.contacts .contacts__info a:last-child {
-  margin: 0;
 }
 
 .copy {

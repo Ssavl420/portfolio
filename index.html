@@ -35,22 +35,45 @@
 <body>
    <div class="wrapper">
       <div class="header">
-         <div class="header__bg"></div>
-         <div class="header__inner container">
+         <div class="container">
             <div class="menu__wrap">
                <div class="header__logo">
                   <p>Savlevich</p>
                </div>
                <nav class="header__menu">
-                  <a href="#portfolio">Портфолио</a>
-                  <a href="#competencies">Компетенции</a>
-                  <a href="#services">Услуги</a>
-                  <a href="#contacts">Контакты</a>
+                  <a data-goto="#portfolio" href="portfolio/" class="link">Портфолио</a>
+                  <a data-goto="#competencies" href="competencies/" class="link">Компетенции</a>
+                  <a data-goto="#services" href="services/" class="link">Услуги</a>
+                  <a data-goto="#contacts" href="contacts/" class="link">Контакты</a>
                </nav>
+               <div class="burger__icon"><span></span></div>
             </div>
-            <p class="header__text">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж
+            <div class="burger">
+               <div class="burger__body">
+                  <div class="burger__menu">
+                     <a data-goto="#portfolio" href="portfolio/" class="link">Портфолио</a>
+                     <a data-goto="#competencies" href="competencies/" class="link">Компетенции</a>
+                     <a data-goto="#services" href="services/" class="link">Услуги</a>
+                  </div>
+                  <div class="burger__footer">
+                     <p>Контакты</p>
+                     <a href="mailto:savlevich@savlevich.ru" target="_blank">Mail</a>
+                     <a href="tel:+79237888844">Phone</a>
+                     <a href="https://t.me/d_livsi" target="_blank" rel="noopener noreferrer">Telegram</a>
+                  </div>
+                  <a class="burger__close" href="#!"><img src="./Img/icons/close.png" alt="Close button"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="about">
+         <div class="about__bg"></div>
+         <div class="about__inner container">
+            <p class="about__text">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж
                компании и позволяют выделиться на фоне конкурентов</p>
-            <h1 class="header__maintext">Привет, я Сергей — фронтенд разработчик и дизайнер сайтов</h1>
+            <h1 class="about__maintext">
+               <p>Сергей Савлевич</p> фронтенд разработчик и дизайнер сайтов
+            </h1>
          </div>
       </div>
       <div id="portfolio" class="portfolio">
@@ -157,6 +180,7 @@
          </div>
       </div>
    </div>
+   <script src="Js/script.js"></script>
 </body>
 
 </html>

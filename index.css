@@ -690,18 +690,11 @@ body.body-lock {
 }
 .contacts .contacts__info .form__body .input {
   padding: 0 0 0 20px;
-  height: 45px;
-  font-size: 20px;
-  font-weight: 200;
+  height: 38px;
   line-height: 38px;
   background: #3B3D3B;
   color: #FFFFFF;
   border-radius: 19px;
-}
-@media (max-width: 767px) {
-  .contacts .contacts__info .form__body .input {
-    height: 38px;
-  }
 }
 .contacts .contacts__info .form__body .input::placeholder {
   color: #FFFFFF;
@@ -714,11 +707,9 @@ body.body-lock {
 }
 .contacts .contacts__info .form__body .input._error {
   box-shadow: 0 0 15px rgb(255, 230, 0);
-  -webkit-box-shadow: 0 0 15px rgb(255, 230, 0);
 }
 .contacts .contacts__info .form__body .input:focus {
   box-shadow: 0 0 15px 0px white;
-  -webkit-box-shadow: 0 0 15px 0px white;
 }
 .contacts .contacts__info .form__body .form__btn {
   width: 40%;

@@ -26,7 +26,7 @@
       content="Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов">
    <meta property="og:image" content="Img/logo/01.png">
    <meta property="twitter:image" content="Img/logo/01.png">
-   <meta property="og:url" content="https://ssavl420.github.io/portfolio/">
+   <meta property="og:url" content="https://savlevich.ru">
    <meta property="og:site_name" content="Portfolio">
    <link rel="icon" href="./Img/favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="Source/css/index.css">
@@ -78,7 +78,7 @@
       </div>
       <div id="portfolio" class="portfolio">
          <div class="container">
-            <p class="portfolio__title title">Самые свежие проекты</p>
+            <p class="portfolio__title title">Свежие проекты</p>
             <a class="porfolio__item hydra" href="https://alexyuryevit.github.io/SD-HydraDev/" target="_blank">
                <p class="item__subtitle subtitle">Hydra</p>
                <p class="item__description">дизайн, верстка, настройка</p>
@@ -131,7 +131,7 @@
       </div>
       <div id="services" class="services">
          <div class="container">
-            <p class="services__title title">Помогаю реализовать широкий спектр задач</p>
+            <p class="services__title title">Реализую широкий спектр задач</p>
             <div class="services__box">
                <div class="box__image">
                   <img src="./Img/content/01services.png" alt="part of web site">
@@ -168,11 +168,14 @@
       </div>
       <div id="contacts" class="contacts">
          <div class="contacts__info container">
-            <p class="info__text">Для связи со мной заполните простую форму</p>
-            <form class="form" autocomplete="on">
-               <input class="input" type="name" name="name" placeholder="Имя">
-               <input class="input" type="email" name="email" placeholder="example@mail.com">
-               <button class="input__btn" type="submit">Отправить</button>
+            <form action="#" id="form" class="form__body" autocomplete="on">
+               <p class="form__title">Для связи<br>заполните простую форму</p>
+               <input id="formName" class="input _req" type="text" name="name" placeholder="Имя*">
+               <input id="formTel" class="input _phone _req" type="tel" name="phone" placeholder="+7911-***-**-**">
+               <input id="formEmail" class="input _email _req" type="email" name="email"
+                  placeholder="example@mail.com*">
+               <textarea id="fornMessage" class="input" name="message" placeholder="Сообщение"></textarea>
+               <button class="form__btn" type="submit">Отправить</button>
             </form>
          </div>
       </div>
